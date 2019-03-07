@@ -84,4 +84,8 @@ TARGET_USES_CASH_EXTENSION := true
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_USES_GRALLOC1 := true
 
+# Treble
+# Disable split sepolicy to use not_full_treble() macros
+PRODUCT_SEPOLICY_SPLIT_OVERRIDE := false
+
 include device/sony/common/CommonConfig.mk
